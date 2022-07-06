@@ -13,7 +13,7 @@
 }
 
 #floorPlan div {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
@@ -41,13 +41,16 @@ div.kitchen {
   grid-column: 4 / 5; 
 }
 
-
+#kitchenText {
+  grid-row: 1 / 3;
+}
 .oven {
   /* display: flex; */
   background-color: #db6b43;
   align-self: start;
   height: 5vmin;
-
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
 }
 
 .sink {
@@ -55,6 +58,8 @@ div.kitchen {
   background-color: #a6743f;
   align-self: start;
   height: 5vmin;
+  grid-row: 1 / 3;
+  grid-column: 3 / 5;
 }
 
 #bed-1 {
